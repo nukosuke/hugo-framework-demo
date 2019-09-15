@@ -1,3 +1,8 @@
 baseURL = "http://example.org/"
 languageCode = "en-us"
 title = "My New Hugo Site"
+
+[module]
+  [[module.mounts]]
+  source = "node_modules/bulma"
+  target = "assets/stylesheets/bulma"

@@ -1,17 +1,17 @@
 {
-  "name": "hugo-framework-demo",
+  "name": "hugo-librarian-demo",
   "version": "0.0.0",
-  "description": "Demo for hugo-framework theme",
+  "description": "Demo for Hugo librarian theme",
   "private": true,
-  "workspaces": ["themes/framework"],
+  "workspaces": ["themes/librarian"],
   "main": "index.js",
   "scripts": {
-    "build": "yarn workspace hugo-framework run build",
+    "build": "yarn workspace librarian run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nukosuke/hugo-framework-demo.git"
+    "url": "git+https://github.com/nukosuke/hugo-librarian-demo.git"
   },
   "keywords": [
     "hugo",
@@ -21,7 +21,7 @@
   "author": "nukosuke",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/nukosuke/hugo-framework-demo/issues"
+    "url": "https://github.com/nukosuke/hugo-librarian-demo/issues"
   },
-  "homepage": "https://github.com/nukosuke/hugo-framework-demo#readme"
+  "homepage": "https://github.com/nukosuke/hugo-librarian-demo#readme"
 }

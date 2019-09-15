@@ -1,0 +1,24 @@
+language: node_js
+
+node_js:
+  - 10.16.0
+
+cache: yarn
+
+install:
+  - curl -LO https://github.com/gohugoio/hugo/releases/download/v0.58.2/hugo_extended_0.58.2_Linux-64bit.deb
+  - sudo dpkg -i hugo_extended_0.58.2_Linux-64bit.deb
+  - yarn install
+
+script:
+  - yarn workspace hugo-framework run build
+  - hugo
+
+deploy:
+  local_dir: public
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  keep_history: false
+  on:
+    branch: master

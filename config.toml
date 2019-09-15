@@ -1,3 +1,12 @@
-baseURL = "http://example.org/"
+baseURL = "https://nukosuke.github.io/hugo-framework-demo/"
 languageCode = "en-us"
 title = "My New Hugo Site"
+theme = "framework"
+
+[permalinks]
+  post = "/:year/:month/:day/:slug/"
+
+[module]
+  [[module.mounts]]
+  source = "node_modules/bulma"
+  target = "assets/stylesheets/bulma"

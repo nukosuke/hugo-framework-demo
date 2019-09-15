@@ -13,3 +13,6 @@ theme = "framework"
   [[module.mounts]]
     source = "node_modules/bulma"
     target = "assets/stylesheets/bulma"
+
+[Params]
+  author = "nukosuke"

@@ -1,6 +1,10 @@
 baseURL = "http://example.org/"
 languageCode = "en-us"
 title = "My New Hugo Site"
+theme = "framework"
+
+[permalinks]
+  post = "/:year/:month/:day/:slug/"
 
 [module]
   [[module.mounts]]
